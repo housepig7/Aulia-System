@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}详细信息{% endblock %}
+
+{% block content %}
+
+    <div class="col-md-4">
+        <dl class="row">
+            <dt class="col-md-6 text-right">表ID</dt>
+            <dd class="col-md-1 order-5">{{ player_content.id }}</dd>
+            <dt>玩家ID</dt>
+            <dd>{{ player_content.playerid }}</dd>
+            <dt>订单ID</dt>
+            <dd>{{ player_content.orderid }}</dd>
+            <dt>道具名</dt>
+            <dd>{{ player_content.propname }}</dd>
+            <dt>道具数量</dt>
+            <dd>{{ player_content.propnumber }}</dd>
+            <dt>价格</dt>
+            <dd>{{ player_content.propprice }}</dd>
+            <dt>渠道编码</dt>
+            <dd>{{ player_content.channelcode }}</dd>
+            <dt>渠道标识</dt>
+            <dd>{{ player_content.channellabel }}</dd>
+            <dt>金额</dt>
+            <dd>{{ player_content.price }}</dd>
+            <dt>入库时间</dt>
+            <dd>{{ player_content.rechargetime }}</dd>
+            <dt>发放状态</dt>
+            <dd>{{ player_content.status }}</dd>
+            <dt>发放时间</dt>
+            <dd>{{ player_content.givingtime }}</dd>
+            <dt>确认状态</dt>
+            <dd>{{ player_content.confirm }}</dd>
+            <dt>再次发放确定时间</dt>
+            <dd>{{ player_content.confirmtime }}</dd>
+        </dl>
+    </div>
+{% endblock %}

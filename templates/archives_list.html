@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}archives{% endblock %}
+
+{% block content %}
+<div class="table-responsive">
+    <table class="table text-center table-bordered table-striped table-hover">
+        <tr>
+            <td>玩家id</td>
+            <td>渠道</td>
+            <td>游戏名称</td>
+            <td>玩家存档文件</td>
+            <td>最近存档时间</td>
+            <td>上传次数</td>
+        </tr>
+        {% for context in my_context %}
+            <tr>
+                <td>{{ context.id }}</td>
+                <td>{{ context.channel }}</td>
+                <td>{{ context.user }}</td>
+                <td>{{ context.file }}</td>
+                <td>{{ context.time }}</td>
+                <td>{{ context.upload_num }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

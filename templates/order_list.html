@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}IOS Order{% endblock %}
+
+{% block content %}
+<div class="table-responsive">
+    <table class="table text-center table-bordered table-striped table-hover">
+        <tr>
+            <td>表ID</td>
+            <td>玩家ID</td>
+            <td>订单ID</td>
+            <td>道具名</td>
+            <td>道具数量</td>
+            <td>价格</td>
+            <td>渠道编码</td>
+            <td>渠道标识</td>
+            <td>金额</td>
+            <td>入库时间</td>
+            <td>发放状态</td>
+            <td>发放时间</td>
+            <td>确认状态</td>
+            <td>再次发放确定时间</td>
+        </tr>
+        {% for context in order_content %}
+            <tr>
+                <td>{{ context.id }}</td>
+                <td>{{ context.playerid }}</td>
+                <td>{{ context.orderid }}</td>
+                <td>{{ context.propname }}</td>
+                <td>{{ context.propnumber }}</td>
+                <td>{{ context.propprice }}</td>
+                <td>{{ context.channelcode }}</td>
+                <td>{{ context.channellabel }}</td>
+                <td>{{ context.price }}</td>
+                <td>{{ context.rechargetime }}</td>
+                <td>{{ context.status }}</td>
+                <td>{{ context.givingtime }}</td>
+                <td>{{ context.confirm }}</td>
+                <td>{{ context.confirmtime }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

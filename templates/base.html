@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}默认{% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="{% static "css/py1/style.css" %}">
+    <link type="text/css" rel="stylesheet" href="{% static "css/py2/bootstrap.min.css" %}">
+    <script src="{% static "js/bootstrap.min.js" %}" type="text/javascript"></script>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
