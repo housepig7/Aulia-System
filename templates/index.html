@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Aulia的模拟数据{% endblock %}
+
+{% block content %}
+
+    <form action="/search" method="get">
+    {% csrf_token %}
+        <div class="form-group">
+            <label>你想要搜索什么？</label>
+            <input type="search" class="form-control" id="search_value" placeholder="来啦老弟">
+        </div>
+        <button type="submit" class="btn btn-primary">确定</button>
+    </form>
+
+{% endblock %}

@@ -9,7 +9,19 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse('111111')
+    return render(request, 'index.html')
+
+
+def search(request):
+    v = request.GET.get('search_value')
+    error_msg = ''
+
+    if not v:
+        error_msg = '请输入关键词'
+        return render(request, 'error.html', {'error_msg': error_msg})
+
+    post_list = Order.objects.filter(title_icontains=v)
+    return render(request, 'results.html', {'error_msg': error_msg, 'post_list': post_list})
 
 
 def archives_list(request):

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% if error_msg %}
+    <p>{{ error_msg }}</p>
+{% endif %}
+
+{% for post in post_list %}
+    <div>
+        {{ post }}
+    </div>
+    {% empty %}
+    <div>
+        No Message!
+    </div>
+{% endfor %}
