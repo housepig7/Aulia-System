@@ -17,7 +17,9 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path, re_path
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('py1.urls')),
+    path('', include(('py1.urls', 'py1'), namespace='py1')),
+    re_path('^search/$', include('haystack.urls'))
 ]

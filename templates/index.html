@@ -4,11 +4,11 @@
 
 {% block content %}
 
-    <form action="/search" method="get">
+    <form action="{% url 'haystack_search' %}" method="get" role="search" id="searchform">
     {% csrf_token %}
         <div class="form-group">
             <label>你想要搜索什么？</label>
-            <input type="search" class="form-control" id="search_value" placeholder="来啦老弟">
+            <input type="search" class="form-control" name="q" placeholder="来啦老弟" required>
         </div>
         <button type="submit" class="btn btn-primary">确定</button>
     </form>
