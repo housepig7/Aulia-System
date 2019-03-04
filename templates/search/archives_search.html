@@ -12,8 +12,14 @@
                         <a href="{% url 'py1:order_detail' result.object.pk %}">玩家ID:{% highlight result.object.id with query %}</a>
                     </h4>
                     <div class="entry-meta">
+                        <span class="name">
+                            玩家名：{{ result.object.account }}
+                        </span>
+                        <span>
+                            订单ID: {{ result.object.order_id }}
+                        </span>
                         <span class="post-category">
-                            充值渠道：{{ result.object.channellabel }}
+                            订单号：{{ result.object.billno }}
                         </span>
                         <span class="post-date">
                             <time class="entry-date">充值时间：{{ result.object.rechargetime }}</time>
@@ -22,7 +28,10 @@
                             <time class="entry-date">到账时间：{{ result.object.givingtime }}</time>
                         </span>
                         <span class="post-author">
-                            充值金额：{{ result.object.propprice }}
+                            充值金额：{{ result.object.amount }}
+                        </span>
+                        <span>
+                            渠道ID: {{ result.object.app_id }}
                         </span>
                     </div>
                 </header>

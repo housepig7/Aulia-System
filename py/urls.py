@@ -21,5 +21,9 @@ from django.urls import path, re_path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(('py1.urls', 'py1'), namespace='py1')),
-    re_path('search', include('haystack.urls'))
+    path('pp_search_index', include(('py1.urls', 'py1'), namespace='py1')),
+    path('arch_search_index', include(('py1.urls', 'py1'), namespace='py1')),
+    path('archives_search', include('haystack.urls')),
+    path('pp_search', include('haystack.urls')),
+    path('search', include('haystack.urls'))
 ]
