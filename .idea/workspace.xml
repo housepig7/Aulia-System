@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a987a21e-75f7-4ff6-8387-ac2a22e594c3" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/arch_search_index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/pp_search_index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/search/archives_search.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/search/indexes/py1/archives_text.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/search/indexes/py1/orderpp_text.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/search/pp_search.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/py/urls.py" afterPath="$PROJECT_DIR$/py/urls.py" />
-      <change beforePath="$PROJECT_DIR$/py1/search_indexes.py" afterPath="$PROJECT_DIR$/py1/search_indexes.py" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/search/search.html" afterPath="$PROJECT_DIR$/templates/search/search.html" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/MAIN_WRITELOCK" afterPath="$PROJECT_DIR$/whoosh_index/MAIN_WRITELOCK" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/MAIN_w1m5saj2xr7orf48.seg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/MAIN_x70jnvzgd6cmt92d.seg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_2.toc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/py/settings.py" afterPath="$PROJECT_DIR$/py/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,11 +121,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="archives_text.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="archives_text.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/archives_text.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderpp_text.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/orderpp_text.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/py/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="87" column="2" lean-forward="true" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_text.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/order_text.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -229,7 +245,6 @@
         <option value="$PROJECT_DIR$/py1/search.py" />
         <option value="$PROJECT_DIR$/templates/search/indexes/py1/order_text.txt" />
         <option value="$PROJECT_DIR$/py1/views.py" />
-        <option value="$PROJECT_DIR$/py/settings.py" />
         <option value="$PROJECT_DIR$/py1/urls.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/search/indexes/py1/archives_text.txt" />
@@ -239,6 +254,7 @@
         <option value="$PROJECT_DIR$/py1/search_indexes.py" />
         <option value="$PROJECT_DIR$/templates/search/indexes/py1/orderpp_text.txt" />
         <option value="$PROJECT_DIR$/py/urls.py" />
+        <option value="$PROJECT_DIR$/py/settings.py" />
       </list>
     </option>
   </component>
@@ -484,7 +500,7 @@
         <state relative-caret-position="150">
           <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,14 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/py/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -640,14 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="115" column="8" lean-forward="false" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/order_text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -705,16 +705,8 @@
         <state relative-caret-position="117">
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/orderpp_text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,10 +744,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/order_text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/archives_text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search/indexes/py1/orderpp_text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/py/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="87" column="2" lean-forward="true" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
           <folding />
         </state>
       </provider>
